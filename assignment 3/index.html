@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Design Lab Problems</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Problem 1 -->
+        <div class="problem">
+            <h2>Problem 1: Dynamic Content Update</h2>
+            <h3 id="changeHeading">Original Heading</h3>
+            <button id="changeButton">Change Heading</button>
+        </div>
+
+        <!-- Problem 2 -->
+        <div class="problem">
+            <h2>Problem 2: Real-Time Character Counter</h2>
+            <textarea id="message" placeholder="Type your message here"></textarea>
+            <p>Character count: <span id="charCount">0</span></p>
+        </div>
+
+        <!-- Problem 3 -->
+        <div class="problem">
+            <h2>Problem 3: Add and Remove List Items</h2>
+            <input type="text" id="newItem" placeholder="Enter new item">
+            <button id="addButton">Add</button>
+            <ul id="itemList"></ul>
+        </div>
+
+        <!-- Problem 4 -->
+        <div class="problem">
+            <h2>Problem 4: Change Background Color</h2>
+            <button class="colorButton" data-color="red">Red</button>
+            <button class="colorButton" data-color="blue">Blue</button>
+            <button class="colorButton" data-color="green">Green</button>
+            <button class="colorButton" data-color="black">black</button>
+            <button class="colorButton" data-color="white">white</button>
+        </div>
+
+        <!-- Problem 5 -->
+        <div class="problem">
+            <h2>Problem 5: Toggle Dark Mode</h2>
+            <button id="darkModeToggle">Toggle Dark Mode</button>
+        </div>
+
+        <!-- Problem 6 -->
+        <div class="problem">
+            <h2>Problem 6: Simple Quiz Application</h2>
+            <div class="quiz">
+                <div class="quiz-progress">
+                    Question <span id="currentQuestion">1</span> of 10
+                </div>
+                <div class="quiz-content">
+                    <p id="questionText"></p>
+                    <div id="answerButtons"></div>
+                    <p id="quizResult"></p>
+                </div>
+                <div class="quiz-controls">
+                    <button id="nextQuestion" style="display: none;">Next Question</button>
+                    <button id="restartQuiz" style="display: none;">Restart Quiz</button>
+                </div>
+                <div class="quiz-summary" style="display: none;">
+                    <h3>Quiz Complete!</h3>
+                    <p>Your score: <span id="finalScore">0</span>/10</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

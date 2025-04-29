@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Lab Problems</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- Problem 1: Stopwatch Application -->
+    <section id="stopwatch-section">
+      <h2>Stopwatch Application</h2>
+      <div id="stopwatch">
+        <h1 id="timer-display">00:00</h1>
+        <button id="start-button">Start</button>
+        <button id="stop-button">Stop</button>
+        <button id="reset-button">Reset</button>
+      </div>
+    </section>
+
+    <!-- Problem 2: Image Carousel -->
+    <section id="carousel-section">
+      <h2>Image Carousel</h2>
+      <div class="carousel">
+        <button id="prev-button">&#9664;</button>
+        <img id="carousel-image" src="images1.jpg" alt="Carousel Image"  width="500px">
+        <button id="next-button">&#9654;</button>
+      </div>
+      <div class="carousel-dots" id="carousel-dots"></div>
+    </section>
+
+    <!-- Problem 3: Form Validation -->
+    <section id="form-section">
+      <h2>User Registration Form</h2>
+      <form id="registration-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required>
+
+        <button type="submit">Submit</button>
+        <p id="form-message"></p>
+      </form>
+    </section>
+
+    <!-- Problem 4: To-Do List with Local Storage -->
+    <section id="todo-section">
+      <h2>To-Do List</h2>
+      <input type="text" id="new-task" placeholder="Add a new task">
+      <button id="add-task-button">Add Task</button>
+      <ul id="task-list"></ul>
+      <button id="clear-tasks-button">Clear All</button>
+    </section>
+
+    <!-- Problem 5: Drag and Drop File Uploader -->
+    <section id="file-uploader-section">
+      <h2>Drag and Drop File Uploader</h2>
+      <div id="file-drop-area">
+        <p>Drag and drop a file here or click to upload</p>
+        <input type="file" id="file-input" accept=".pdf,.doc,.docx,.jpg,.jpeg" hidden>
+      </div>
+      <div id="file-preview"></div>
+      <button id="remove-file-button" hidden>Remove</button>
+    </section>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

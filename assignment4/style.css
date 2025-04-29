@@ -1,0 +1,139 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 20px;
+}
+
+section {
+    background-color: #ffffff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #0056b3;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Stopwatch */
+#stopwatch {
+    text-align: center;
+}
+
+#timer-display {
+    font-size: 2.5em;
+    margin: 10px 0;
+}
+
+/* Carousel */
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.carousel img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.carousel-dots button {
+    background-color: #bbb;
+    width: 12px;
+    height: 12px;
+    border: none;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+/* Form Validation */
+form {
+    display: grid;
+    gap: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#form-message {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* To-Do List */
+#task-list {
+    list-style: none;
+    padding: 0;
+}
+
+#task-list li {
+    background: #eef;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#task-list li.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+/* File Uploader */
+#file-drop-area {
+    padding: 20px;
+    border: 2px dashed #ddd;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+#file-drop-area:hover {
+    background-color: #e0e0e0;
+}
+
+#file-preview img {
+    max-width: 100px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
